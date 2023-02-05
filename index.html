@@ -1,0 +1,29 @@
+<head>
+  <style>
+    html::-webkit-scrollbar {
+      /*display: none;*/
+    }
+    #heroBox{
+      display:flex;
+      height: 100vh;
+      width: 100vw;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    #hero{
+      animation: spin 15s  linear infinite;
+    }
+    @keyframes spin {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="heroBox">
+    <img src="frame.png" alt="rollerBagel" id="hero">
+  </div>
+</body>
