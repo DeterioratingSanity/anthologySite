@@ -9,6 +9,10 @@ body{
 *{
   scroll-behavior: smooth;
 }
+*::selection{
+  color:#FDF8F2;
+  background:#FF4C15;
+}
 #heroBox{
   display:flex;
   height: 105vh;
