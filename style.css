@@ -1,0 +1,102 @@
+@import "https://unpkg.com/open-props";
+
+html::-webkit-scrollbar {
+  display: none;
+}
+body{
+  background-color: #FDF8F2;
+}
+*{
+  scroll-behavior: smooth;
+}
+#heroBox{
+  display:flex;
+  height: 105vh;
+  width: 97vw;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  user-select: none;
+  margin-top: -5vh;
+}
+#hero{
+  animation: spin 15s  linear infinite;
+  height: 60vh;
+}
+#title{
+  position:absolute;
+  font-weight:bold;
+  font-family: 'Homemade Apple';
+  font-size: 7em;
+  color: #FF4C15;
+}
+#subTitle{
+  position:absolute;
+  padding-top:3.5em;
+  padding-right:4em;
+  font-weight:bold;
+  font-family: 'Homemade Apple';
+  font-size: 3em;
+  color: #FF4C15;
+}
+.frame{
+  position:absolute;
+  font-family: 'Homemade Apple';
+  font-size: 15em;
+  color: #FF4C15;
+  margin-top:2em;
+}
+#frameOne{
+  margin-right:3.3em;
+}
+#frameTwo{
+  margin-left:3em;
+}
+
+.sect{
+  min-height:114vh;
+  padding:3em;
+}
+.sectTitle{
+  font-family: 'Homemade Apple';
+  font-size: 5em;
+  color: #FF4C15;
+  margin-top:2em;
+}
+
+#nav{
+  position: fixed;
+  top: 50%;
+  right:3em;
+  transform: translate(0, -50%);
+  background-color: #835B4F;
+  border-radius:var(--radius-round);
+}
+
+.key{
+  content: '';
+  display: block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background:#FF7950;
+  margin: 30px;
+}
+
+.active{
+  background: #FF4C15;
+}
+#splitter{
+  content: '';
+  display: block;
+  width: 2.5em;
+  height: 0.2em;
+  line-height: 0;
+  background:#FF7950;
+  margin: auto;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

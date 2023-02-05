@@ -1,29 +1,139 @@
 <head>
-  <style>
-    html::-webkit-scrollbar {
-      /*display: none;*/
-    }
-    #heroBox{
-      display:flex;
-      height: 100vh;
-      width: 100vw;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-    #hero{
-      animation: spin 15s  linear infinite;
-    }
-    @keyframes spin {
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Homemade Apple' rel='stylesheet'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
 </head>
 
 <body>
   <div id="heroBox">
-    <img src="frame.png" alt="rollerBagel" id="hero">
+    <img src="frame.png" alt="rollerBagel" id="hero" ondragstart="return false;">
+    <p id="title">anthology</p><br>
+    <p id="subTitle">wyatt wilson</p>
+    <p class="frame" id="frameOne">*</p><p class="frame" id="frameTwo">*</p>
   </div>
+
+  <div id="nav">
+    <a class="key" href="#" id="navTitle"></a>
+    <span id="splitter"></span>
+    <a class="key" href="#one" id="navOne"></a>
+    <a class="key" href="#two" id="navTwo"></a>
+    <a class="key" href="#three" id="navThree"></a>
+    <a class="key" href="#four" id="navFour"></a>
+    <a class="key" href="#five" id="navFive"></a>
+    <a class="key" href="#six" id="navSix"></a>
+    <a class="key" href="#seven" id="navSeven"></a>
+    <a class="key" href="#eight" id="navEight"></a>
+    <a class="key" href="#nine" id="navNine"></a>
+    <a class="key" href="#ten" id="navTen"></a>
+
+  </div>
+  <div>
+    <div class="sect" id="sectionOne">
+        <p class="sectTitle" id="one">Poem</p>
+
+    </div>
+  </div>
+
+  <div>
+    <div class="sect" id="sectionTwo">
+        <p class="sectTitle" id="two">Poem</p>
+
+    </div>
+  </div>
+
+  <div>
+    <div class="sect" id="sectionThree">
+        <p class="sectTitle" id="three">Poem</p>
+
+    </div>
+  </div>
+
+  <div>
+    <div class="sect" id="sectionFour">
+        <p class="sectTitle" id="four">Poem</p>
+
+    </div>
+  </div>
+
+  <div>
+    <div class="sect" id="sectionFive">
+        <p class="sectTitle" id="five">Poem</p>
+
+    </div>
+  </div>
+
+  <div>
+    <div class="sect" id="sectionSix">
+        <p class="sectTitle" id="six">Poem</p>
+
+    </div>
+  </div>
+
+  <div>
+    <div class="sect" id="sectionSeven">
+        <p class="sectTitle" id="seven">Poem</p>
+
+    </div>
+  </div>
+
+  <div>
+    <div class="sect" id="sectionEight">
+        <p class="sectTitle" id="eight">Poem</p>
+
+    </div>
+  </div>
+
+  <div >
+    <div class="sect"id="sectionNine">
+        <p class="sectTitle" id="nine">Poem</p>
+
+    </div>
+  </div>
+
+  <div >
+    <div class="sect" id="sectionTen">
+        <p class="sectTitle" id="ten">Poem</p>
+
+    </div>
+  </div>
+
+  <script>
+    var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 1000}});
+
+      new ScrollMagic.Scene({triggerElement: "#title"})
+              .setClassToggle("#navTitle", "active")
+              .addTo(controller);
+    	new ScrollMagic.Scene({triggerElement: "#sectionOne"})
+    					.setClassToggle("#navOne", "active") // add class toggle
+    					.addTo(controller);
+    	new ScrollMagic.Scene({triggerElement: "#sectionTwo"})
+    					.setClassToggle("#navTwo", "active") // add class toggle
+    					.addTo(controller);
+    	new ScrollMagic.Scene({triggerElement: "#sectionThree"})
+    					.setClassToggle("#navThree", "active") // add class toggle
+    					.addTo(controller);
+    	new ScrollMagic.Scene({triggerElement: "#sectionFour"})
+    					.setClassToggle("#navFour", "active") // add class toggle
+    					.addTo(controller);
+      new ScrollMagic.Scene({triggerElement: "#sectionFive"})
+              .setClassToggle("#navFive", "active")
+              .addTo(controller);
+      new ScrollMagic.Scene({triggerElement: "#sectionSix"})
+              .setClassToggle("#navSix", "active")
+              .addTo(controller);
+      new ScrollMagic.Scene({triggerElement: "#sectionSeven"})
+              .setClassToggle("#navSeven", "active")
+              .addTo(controller);
+      new ScrollMagic.Scene({triggerElement: "#sectionEight"})
+              .setClassToggle("#navEight", "active")
+              .addTo(controller);
+      new ScrollMagic.Scene({triggerElement: "#sectionNine"})
+              .setClassToggle("#navNine", "active")
+              .addTo(controller);
+      new ScrollMagic.Scene({triggerElement: "#sectionTen"})
+              .setClassToggle("#navTen", "active")
+              .addTo(controller);
+  </script>
 </body>
