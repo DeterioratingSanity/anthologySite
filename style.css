@@ -39,6 +39,14 @@ body{
   font-size: 3em;
   color: #FF4C15;
 }
+.content{
+  margin-top: -2em;
+  padding-left:4em;
+  font-weight:bold;
+  font-family: 'Homemade Apple';
+  font-size: 2em;
+  color: #FF4C15;
+}
 .frame{
   position:absolute;
   font-family: 'Homemade Apple';
