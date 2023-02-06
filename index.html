@@ -6,6 +6,8 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -413,7 +415,7 @@
       new ScrollMagic.Scene({triggerElement: "#title", duration:500})
               .setClassToggle("#navTitle", "active")
               .addTo(controller);
-    	new ScrollMagic.Scene({triggerElement: "#sectionOne", duration:1500})
+    	new ScrollMagic.Scene({triggerElement: "#sectionOne", duration:1300})
     					.setClassToggle("#navOne", "active") // add class toggle
     					.addTo(controller);
     	new ScrollMagic.Scene({triggerElement: "#sectionTwo", duration:2300})
